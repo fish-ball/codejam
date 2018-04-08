@@ -2,9 +2,7 @@
 import sys
 from math import sin, cos, tan, pi, acos, asin, atan, fabs
 
-sys.stdin = open('D-sample.in', 'r')
-
-
+#sys.stdin = open('D-sample.in', 'r')
 # sys.stdout = open('A-sample.out', 'w')
 
 def f1(angle):
@@ -45,7 +43,7 @@ def run():
         else:
             # 2-dim
             l = 0
-            r = atan(5 * (2 ** .5))
+            r = atan(.5 * (2 ** .5))
             m = (l + r) * .5
             d45 = (2 ** .5) * .5
             iterations = 64
@@ -60,8 +58,8 @@ def run():
                     l = m
                 m = (l + r) * .5
             print('{:f} {:f} {:f}'.format(cos(m) * .5, sin(m) * .5, 0))
-            print('{:f} {:f} {:f}'.format(-d45 * sin(m) * .5, d45 * cos(m) * .5, d45 * 0.5))
-            print('{:.10f} {:.10f} {:.10f}'.format(-d45 * sin(m) * .5, d45 * cos(m) * .5, d45 * 0.5))
+            print('{:f} {:f} {:f}'.format(-d45 * sin(m) * .5, d45 * cos(m) * .5, d45 * .5))
+            print('{:.10f} {:.10f} {:.10f}'.format(-d45 * sin(m) * .5, d45 * cos(m) * .5, d45 * .5))
 
 
 run()
