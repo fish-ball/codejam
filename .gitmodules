@@ -1,0 +1,9 @@
+[submodule "acmlib_xpcl"]
+	path = acmlib_xpcl
+	url = https://github.com/fish-ball/acmlib_xpcl
+[submodule "acmlib_zju"]
+	path = acmlib_zju
+	url = https://github.com/fish-ball/acmlib_zju
+[submodule "acmlib_sclproject"]
+	path = acmlib_sclproject
+	url = https://github.com/fish-ball/acmlib_sclproject
